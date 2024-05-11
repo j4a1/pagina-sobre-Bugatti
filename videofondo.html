@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con video</title>
+    <link rel="stylesheet" href="./css/si.css">
+</head>
+<body>
+    <div class="video-container">
+        <video id="video" autoplay muted>
+            
+            <source src="../IMAGENES/introbugatti.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+           
+        </video>
+    </div>
+    <div class="texto-superpuesto">
+        <p>SI LO QUE VES ES DE TODOS NO ES BUGATTI</p>
+    </div>
+          <audio autoplay loop>
+            <source src="../musica/bugattii.mp3" type="">
+        </audio>                                                                                                                                                                                                                                                                                                                                                               
+</body>
+</html>
+<script>
+   var texto=document.querySelector(".texto-superpuesto")
+    // temporizador para hacer desaparecer el texto despues de 5 segundo(5000 milesefundos)
+    setTimeout(function() {
+        //ocultando el texto cambiando su estilo
+        texto.style.display="none"
+    },18000);
+
+
+    /* codigo de el video principal*/ 
+
+    // Obtener el elemento de video
+var video = document.getElementById('video');
+
+// Duración del video en segundos
+var duracionVideo = 26; // 60 segundos (1 minuto)
+
+// Esperar la duración del video antes de redirigir a otra página
+setTimeout(function(){
+window.location.href = 'linea.html';
+}, duracionVideo * 1000); // Convertir segundos a milisegundos
+</script>
+
+<style>
+.texto-superpuesto{
+    position: absolute;
+    top: 350PX;
+    left: 25%;
+    transform: translate(-50,-50);
+    background-color: rgb(red, green, blue);
+    pad: 100px;
+    border-radius: 5px;
+    font-size: 30px;
+    color: aliceblue;
+}
+</style>
+
+                                                                                                                                         

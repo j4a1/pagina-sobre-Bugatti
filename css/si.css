@@ -1,0 +1,352 @@
+.fondo{
+background:url(https://img.freepik.com/fotos-premium/diseno-cartel-palabra-tiempo-matematicas-numeros-fondo-camiseta_947814-55435.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1713916800&semt=ais)
+
+}
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+body{
+margin: 0px;
+padding: 0%;
+font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    height:100px;
+    background: tranparens;
+    
+}
+#logo{
+    width: 180px;
+    height: 150px;
+    margin: 1,2%6,5%0,5%;
+    border-radius: 50%;
+    box-shadow: 5p 5px 15px rgb(248, 248, 248);
+   
+    
+
+}
+.cajafuerte {
+  text-align: right;
+}
+#sisa{
+
+position:absolute;
+top: 60px;
+left: 200px;
+
+
+
+}
+
+.etiquetas{
+
+    position:absolute ;
+    top: 30px;
+    left: 700px;
+    font-size: 25px;
+    display: inline;
+    margin-top: 5px;
+   
+    
+}
+.etiquetas .niveles{
+    display: inline;
+    margin-right: 20x;
+    color: #ffffff;
+    
+}
+.etiquetas li {
+  display: inline;
+  margin-right: 20px;
+  text-align: right;
+}
+.etiquetas a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-left: 30px;
+  text-align: right;
+}
+.etiquetas a:hover {
+  color: rgb(255, 0, 0);
+}
+
+.colo{
+    color: rgb(195, 16, 16); 
+    text-decoration: none;
+    font-size: 250%;
+    text-align: center;
+    margin-left: 0%;
+
+
+
+}
+.texto2{
+
+    color: rgb(251, 251, 251);
+    width: 590px;
+    margin-left: 350px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: 20%;
+    
+}
+#imagen{
+    width: 250px;
+    height: 250x;
+    top: 50%;
+    margin-left:500px;
+    margin-top: 20px;
+}
+
+#muestra:hover{
+width: 500px;
+}
+    .cuadrocaja{
+      width: 300px;
+      position: relative;
+      height: 350px;
+      margin: 20px;
+      
+          }
+      
+          .cuadrocaja .face{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+              overflow: hidden;
+              transition: 2s;
+              margin: 50PX;
+              
+          }
+          .cuadrocaja .front{
+              transform: perspective(600px) rotatey(0deg);
+              box-shadow: 0 5px 10px rgb(255, 255, 255);
+          }
+      
+          .cuadrocaja .front .img{
+              position: absolute;
+              width: 300px;
+              height: 100%;
+              object-fit: cover;
+          }
+          .cuadrocaja .front h1{
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              line-height: 45px;
+              color: rgb(0, 0, 0);
+              background-color:transparent;
+              text-align: center;
+              
+      
+          }
+          .cuadrocaja .back{
+              transform: perspective(600px) rotateY(100deg);
+              background-color:transparent;
+              color: aqua;
+              pad: 15px;
+              color: rgb(255, 0, 0);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              text-align: center;
+              box-shadow:  0 5px 10px rgb(250, 250, 250);
+          }
+           .cuadrocaja .back .link{
+              border-top: solid 1px rgb(255, 0, 0);
+              height: 50px;
+              line-height: 50px;
+      
+           }
+           .cuadrocaja .back .link a{
+              color: blue;
+           }
+           .cuadrocaja .back h1{
+              font-size: 30px;
+              margin: 20px;
+              letter-spacing: 2px;
+           }
+           .cuadrocaja .back p{
+              letter-spacing: 1px;
+              color: aliceblue;
+           }
+           .cuadrocaja:hover .front{
+              transform: perspective(600px) rotateY(180deg);
+      
+           }
+           .cuadrocaja:hover .back{
+              transform: perspective(600px) rotateY(360deg);
+           }
+           .inline{
+              display: inline-block;
+              display: flex;
+           }
+
+           .label{ 
+            color: aliceblue;
+           }
+           /* stilo de la barra de progreso*/
+
+           /* Estilos para el preloader */
+.preloader {
+  position: fixed;
+  top: 500px; /* Posicionar en la mitad vertical */
+  left: 20px; /* Margen izquierdo de 20px */
+  right: 20px; /* Margen derecho de 20px */
+  transform: translateY(-50%); /* Centrar verticalmente */
+  height: 10px; /* Altura de la barra de progreso */
+  background-color: #ffffff; /* Color de fondo de la barra de progreso */
+  border-radius: 10px; /* borde de la barra de carga*/
+ 
+}
+
+.progress-wrapper {
+  position: relative;
+  height: 100%;
+  
+}
+
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 40px); /* Anchura con margen izquierdo y derecho */
+  height: 100%;
+  background-color: #1100ff; /* Color de la barra de progreso */
+  transition: width 0.1s ease-in-out; /* velocidad de la barra */
+  border-radius: 20px;
+}
+
+.progress-text {
+  position: absolute;
+  top:calc(100% + 50px); /* ubicar el texto abajo con 5px de sepacion*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff; /* Color de el texto de el porcentaje */
+  font-size: 20px; /* Tamaño de el porcentaje */
+}
+
+.contac {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 820px;
+      height: auto;
+  margin: 60px  auto;
+  padding: 20px;
+  background-color: #e61313;
+  border-radius: 10px;
+
+
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+ color: #ffffff;
+ 
+}
+
+input
+{
+  display: flex;
+  flex-direction: column;
+text-align: right;
+  gap: 20px;
+}
+
+select {
+  padding: 4px;
+}
+
+input
+{
+  margin-top: 5px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+margin-bottom: 20px;
+}
+#funcio{
+
+  color: aqua;
+}
+footer{ text-align: center;
+  margin-top: 20px;
+}
+
+
+
+.botone { background-color:transparent; 
+border: none; 
+color: rgb(255, 255, 255);
+padding: 10px 20px; 
+ text-align: center; 
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 40px 200px; 
+ cursor: pointer;
+ border-radius: 100px;
+} .botone:hover { 
+  background-color: #ffffff;
+  color: black;
+}
+footer{
+  text-align: center;
+  margin-left:30px ;
+  width: 1030px;
+ color: aliceblue;
+ position: fixed;   
+}
+footer .icono {
+  color: white; /* Color blanco */
+  font-size: 24px; /* Tamaño deseado */
+  margin-right: 60px; /* Espacio entre los iconos */
+  position: fixed;
+}
+
+
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logolinea {
+  background-color: red;
+  display: block; /* Cambiar a block para centrar */
+  margin: 0 auto; /* Centrar horizontalmente */
+  width: 400px;
+  height: 400px;
+      }
+
+
+
+

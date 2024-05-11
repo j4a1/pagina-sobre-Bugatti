@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/si.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body class="fondo">
+
+    <!-- Contenido del preloader -->
+    <img class="logolinea" src="./IMAGENES/logolinea.jpg" alt="Imagen">
+    <div class="preloader">
+        <div class="progress-wrapper">
+            
+            <div class="progress" id="progress"></div>
+           <div class="progress-text" id="progressText">0%</div>
+           
+           
+        </div>
+       
+    </div>
+    <script>/* codigo de el proloader*/ 
+
+        window.addEventListener('load', function() {
+               var progressBar = document.getElementById('progress');
+               var progressText = document.getElementById('progressText');
+               var width = 0;
+               // Duración total de la animación en milisegundos
+               var duration = 3000; // Por ejemplo, 3000ms (3 segundos)
+               // Intervalo que incrementa gradualmente el ancho de la barra de progreso
+               var interval = setInterval(function() {
+                   // Si el preoceso llega a al final detiene la anim acion
+                   if (width >= 100) {
+                       clearInterval(interval);
+                       // lleva a la pagina que tu escribas
+                       window.location.href = "inicio.html";
+                   } else {
+                       // Incrementar el ancho de la barra de progreso
+                       width++;
+                       // Actualizar la barra de progreso y el texto de progreso
+                       progressBar.style.width = width + '%';
+                       progressText.textContent = width + '%';
+                   }
+               }, duration / 100); // Intervalo de actualización en milisegundos
+           }); </script>
+</body>
+
+</html>
+
